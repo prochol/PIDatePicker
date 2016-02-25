@@ -110,9 +110,9 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
         self.addConstraints([topConstraint, bottomConstraint, leftConstraint, rightConstraint])
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         
-        pickerView.layoutSubviews
+        pickerView.layoutSubviews()
         super.layoutSubviews()
     }
     
