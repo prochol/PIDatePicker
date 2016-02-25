@@ -112,8 +112,20 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     
     public override func layoutSubviews() {
         
-        pickerView.layoutSubviews()
         super.layoutSubviews()
+        pickerView.layoutSubviews()
+    }
+    
+    public override func setNeedsLayout() {
+        
+        super.setNeedsLayout()
+        pickerView.setNeedsLayout()
+    }
+    
+    public override func layoutIfNeeded() {
+        
+        super.layoutIfNeeded()
+        pickerView.layoutIfNeeded()
     }
     
     // MARK: -
