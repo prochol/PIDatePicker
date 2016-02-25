@@ -110,6 +110,12 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
         self.addConstraints([topConstraint, bottomConstraint, leftConstraint, rightConstraint])
     }
     
+    override func layoutSubviews() {
+        
+        pickerView.layoutSubviews
+        super.layoutSubviews()
+    }
+    
     // MARK: -
     // MARK: Override
     public override func intrinsicContentSize() -> CGSize {
@@ -507,11 +513,13 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     public func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
         let label = view as? UILabel == nil ? UILabel() : view as! UILabel
         
+        let pickerComponent = self.componentAtIndex(component)
+        
         label.font = self.font
         label.textColor = self.textColor
         label.text = self.titleForRow(row, inComponentIndex: component)
-        label.textAlignment = self.componentAtIndex(component) == .Month ? NSTextAlignment.Left : NSTextAlignment.Right
-        label.textColor = self.isRowEnabled(row, forComponent: self.componentAtIndex(component)) ? self.textColor : self.disabledTextColor
+        label.textAlignment = pickerComponent == .Month ? NSTextAlignment.Left : pickerComponent == .Day ? NSTextAlignment.Center : NSTextAlignment.Right
+        label.textColor = self.isRowEnabled(row, forComponent: pickerComponent) ? self.textColor : self.disabledTextColor
 
         return label
     }
@@ -537,12 +545,12 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
             size = Double(dayComponentSizingString.sizeWithAttributes(stringSizingAttributes).width)
         } else if calendarComponent == .Year  {
             // Pad the year string to four digits.
-            let yearComponentSizingString = NSString(string: "00")
+            let yearComponentSizingString = NSString(string: "0000")
             size = Double(yearComponentSizingString.sizeWithAttributes(stringSizingAttributes).width)
         }
         
         // Add the width buffer in order to allow the picker components not to run up against the edges
-        return CGFloat(size + widthBuffer)
+        return CGFloat(ceil(size) + widthBuffer)
     }
 
 
