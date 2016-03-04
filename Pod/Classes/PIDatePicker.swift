@@ -192,27 +192,8 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
         Refreshes the ordering of components based on the current locale. Calling this function will not refresh the picker view.
     */
     private func refreshComponentOrdering() {
-        var componentOrdering = NSDateFormatter.dateFormatFromTemplate("yMMMMd", options: 0, locale: self.locale)!
-
-        let firstComponentOrderingString = componentOrdering[componentOrdering.startIndex.advancedBy(0)]
-        let lastComponentOrderingString = componentOrdering[componentOrdering.startIndex.advancedBy(componentOrdering.characters.count - 1)]
-
-        let characterSet = NSMutableCharacterSet()
         
-        characterSet.formUnionWithCharacterSet(NSCharacterSet(charactersInString: String(firstComponentOrderingString) +
-            String(lastComponentOrderingString)))
-        characterSet.formUnionWithCharacterSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        characterSet.formUnionWithCharacterSet(NSCharacterSet.punctuationCharacterSet())
-        
-        componentOrdering = componentOrdering.stringByTrimmingCharactersInSet(characterSet)
-
-        let remainingValue = componentOrdering[componentOrdering.startIndex.advancedBy(0)]
-
-        let firstComponent = PIDatePickerComponents(rawValue: firstComponentOrderingString)!
-        let secondComponent = PIDatePickerComponents(rawValue: remainingValue)!
-        let lastComponent = PIDatePickerComponents(rawValue: lastComponentOrderingString)!
-
-        self.datePickerComponentOrdering = [firstComponent, secondComponent, lastComponent]
+        self.datePickerComponentOrdering = [PIDatePickerComponents(rawValue: "M"), PIDatePickerComponents(rawValue: "d"), PIDatePickerComponents(rawValue: "y")]
     }
     
     /**
