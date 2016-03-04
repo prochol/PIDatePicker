@@ -193,7 +193,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     */
     private func refreshComponentOrdering() {
         
-        self.datePickerComponentOrdering = [PIDatePickerComponents(rawValue: "M"), PIDatePickerComponents(rawValue: "d"), PIDatePickerComponents(rawValue: "y")]
+        self.datePickerComponentOrdering = [PIDatePickerComponents(rawValue: "M")!, PIDatePickerComponents(rawValue: "d")!, PIDatePickerComponents(rawValue: "y")!]
     }
     
     /**
