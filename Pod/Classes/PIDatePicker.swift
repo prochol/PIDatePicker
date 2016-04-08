@@ -104,6 +104,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
      */
     func commonInit() {
         self.translatesAutoresizingMaskIntoConstraints = false
+        self.pickerView.translatesAutoresizingMaskIntoConstraints = false
         
         self.pickerView.dataSource = self
         self.pickerView.delegate = self
@@ -116,6 +117,9 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
         let rightConstraint = NSLayoutConstraint(item: self.pickerView, attribute: .Trailing, relatedBy: .Equal, toItem: self, attribute: .Trailing, multiplier: 1, constant: 0)
         
         self.addConstraints([topConstraint, bottomConstraint, leftConstraint, rightConstraint])
+        
+        setNeedsLayout()
+        layoutIfNeeded()
     }
     
     public override func layoutSubviews() {
