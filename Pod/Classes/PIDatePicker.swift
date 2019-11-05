@@ -16,10 +16,10 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     public var delegate: PIDatePickerDelegate?
     
     /// The font for the date picker.
-    public var font = UIFont.systemFont(ofSize: 15.0)
+    @objc public var font = UIFont.systemFont(ofSize: 15.0)
     
     /// The text color for the date picker components.
-    public var textColor = UIColor.black
+    @objc public var textColor = UIColor.black
     
     /// The minimum date to show for the date picker. Set to NSDate.distantPast() by default
     public var minimumDate = NSDate.distantPast {
@@ -36,14 +36,14 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     /// The current locale to use for formatting the date picker. By default, set to the device's current locale
-    public var locale : Locale = Locale.current {
+    @objc public var locale : Locale = Locale.current {
         didSet {
             self.calendar.locale = self.locale
         }
     }
     
     /// Time zone.
-    public var timezone : TimeZone = TimeZone.current {
+    @objc public var timezone : TimeZone = TimeZone.current {
         
         didSet {
             self.calendar.timeZone = self.timezone
