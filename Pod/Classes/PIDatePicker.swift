@@ -51,7 +51,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     /// The current date value of the date picker.
-    public private(set) var date = Date()
+    @objc public private(set) var date = Date()
     
     // MARK: -
     // MARK: Private Variables
@@ -174,7 +174,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
      :param: date     The date to set the picker to.
      :param: animated True if the date picker should changed with an animation; otherwise false,
      */
-    public func setDate(_ date: Date, animated : Bool) {
+    @objc public func setDate(_ date: Date, animated : Bool) {
         self.date = date
         self.updatePickerViewComponentValuesAnimated(animated: animated)
     }
