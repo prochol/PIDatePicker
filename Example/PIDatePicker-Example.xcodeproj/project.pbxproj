@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36E6A386DFF591AEF793E71F /* Pods_PIDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7612026848609510CC5A95FB /* Pods_PIDatePicker_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -17,6 +16,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		87D319A0F2633B051F1D9883 /* Pods_PIDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2554AFCDB5F6D3D59A520E57 /* Pods_PIDatePicker_Example.framework */; };
 		AB6136CB1AE58859005B28A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6136C91AE58859005B28A2 /* AppDelegate.swift */; };
 		AB6136CC1AE58859005B28A2 /* PIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6136CA1AE58859005B28A2 /* PIViewController.swift */; };
 		C23FC05E1AFD2BC3002049C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23FC05D1AFD2BC3002049C3 /* Main.storyboard */; };
@@ -34,9 +34,9 @@
 
 /* Begin PBXFileReference section */
 		1A4AF20FF708368EC49C1C8F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		379B4ED2CF8D3302B18925CB /* Pods-PIDatePicker-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIDatePicker-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PIDatePicker-Example/Pods-PIDatePicker-Example.release.xcconfig"; sourceTree = "<group>"; };
+		2554AFCDB5F6D3D59A520E57 /* Pods_PIDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4095FC520E0C2F2E57854D58 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		44C52B31EF28D9AC281C5F82 /* PIDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PIDatePicker.podspec; path = ../PIDatePicker.podspec; sourceTree = "<group>"; };
+		44C52B31EF28D9AC281C5F82 /* PIDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PIDatePicker.podspec; path = ../PIDatePicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -48,13 +48,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		7612026848609510CC5A95FB /* Pods_PIDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4757EA1AE5920500A0F3D4 /* PIDatePicker-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PIDatePicker-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4757EB1AE5920500A0F3D4 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6136C91AE58859005B28A2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB6136CA1AE58859005B28A2 /* PIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIViewController.swift; sourceTree = "<group>"; };
 		C23FC05D1AFD2BC3002049C3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		EFFE21CAD33723C323537594 /* Pods-PIDatePicker-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIDatePicker-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PIDatePicker-Example/Pods-PIDatePicker-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DA7967A3CAD137CC80CCE405 /* Pods-PIDatePicker-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIDatePicker-Example.debug.xcconfig"; path = "Target Support Files/Pods-PIDatePicker-Example/Pods-PIDatePicker-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DC114F85F81C4B6BF8571978 /* Pods-PIDatePicker-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIDatePicker-Example.release.xcconfig"; path = "Target Support Files/Pods-PIDatePicker-Example/Pods-PIDatePicker-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				36E6A386DFF591AEF793E71F /* Pods_PIDatePicker_Example.framework in Frameworks */,
+				87D319A0F2633B051F1D9883 /* Pods_PIDatePicker_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +88,9 @@
 				6003F593195388D20070C39A /* PIDatePicker */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
-				D3FD62C249998A25714157FE /* Pods */,
 				AB4757EA1AE5920500A0F3D4 /* PIDatePicker-Example.app */,
 				AB4757EB1AE5920500A0F3D4 /* Tests.xctest */,
+				9838F95D7D6D39002F74522D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +100,7 @@
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
-				7612026848609510CC5A95FB /* Pods_PIDatePicker_Example.framework */,
+				2554AFCDB5F6D3D59A520E57 /* Pods_PIDatePicker_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,13 +156,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		D3FD62C249998A25714157FE /* Pods */ = {
+		9838F95D7D6D39002F74522D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EFFE21CAD33723C323537594 /* Pods-PIDatePicker-Example.debug.xcconfig */,
-				379B4ED2CF8D3302B18925CB /* Pods-PIDatePicker-Example.release.xcconfig */,
+				DA7967A3CAD137CC80CCE405 /* Pods-PIDatePicker-Example.debug.xcconfig */,
+				DC114F85F81C4B6BF8571978 /* Pods-PIDatePicker-Example.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "PIDatePicker-Example" */;
 			buildPhases = (
-				3F209F9F82D141C1B3064749 /* Check Pods Manifest.lock */,
+				7E1005C72ACEC08A761D7586 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				D413B36BD037BF25A6643C51 /* Copy Pods Resources */,
-				07805328F87F20A1F3828F4B /* Embed Pods Frameworks */,
+				F4F7F61CD00C44418A8C5C3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,11 +191,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				D7FEC9B214FB8D9E541582B7 /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				FD28B83A9CACE9F69F635013 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -265,79 +263,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07805328F87F20A1F3828F4B /* Embed Pods Frameworks */ = {
+		7E1005C72ACEC08A761D7586 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PIDatePicker-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PIDatePicker-Example/Pods-PIDatePicker-Example-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3F209F9F82D141C1B3064749 /* Check Pods Manifest.lock */ = {
+		F4F7F61CD00C44418A8C5C3A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIDatePicker-Example/Pods-PIDatePicker-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PIDatePicker/PIDatePicker.framework",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PIDatePicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D413B36BD037BF25A6643C51 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PIDatePicker-Example/Pods-PIDatePicker-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7FEC9B214FB8D9E541582B7 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FD28B83A9CACE9F69F635013 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PIDatePicker-Example/Pods-PIDatePicker-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -464,7 +427,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFFE21CAD33723C323537594 /* Pods-PIDatePicker-Example.debug.xcconfig */;
+			baseConfigurationReference = DA7967A3CAD137CC80CCE405 /* Pods-PIDatePicker-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -474,13 +437,14 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				PRODUCT_NAME = "PIDatePicker-Example";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 379B4ED2CF8D3302B18925CB /* Pods-PIDatePicker-Example.release.xcconfig */;
+			baseConfigurationReference = DC114F85F81C4B6BF8571978 /* Pods-PIDatePicker-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -490,6 +454,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				PRODUCT_NAME = "PIDatePicker-Example";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

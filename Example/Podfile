@@ -1,8 +1,11 @@
-source 'https://github.com/CocoaPods/Specs.git'
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
 
-use_frameworks!
+target 'PIDatePicker-Example' do
 
-target 'PIDatePicker-Example', :exclusive => true do
+  use_frameworks!
+
   pod "PIDatePicker", :path => "../"
+
 end
 
