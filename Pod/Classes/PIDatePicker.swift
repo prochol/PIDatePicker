@@ -484,7 +484,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
     // MARK: Protocols
     // MARK: UIPickerViewDelegate
     
-    public func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let datePickerComponent = self.componentAtIndex(index: component)
         let value = self.rawValue(forRow: row, inComponent: datePickerComponent)
         
@@ -519,7 +519,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
         self.delegate?.pickerView(pickerView: self, didSelectRow: row, inComponent: component)
     }
     
-    public func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+    public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let label = view as? UILabel == nil ? UILabel() : view as! UILabel
         
         let pickerComponent = self.componentAtIndex(index: component)
@@ -533,7 +533,7 @@ public class PIDatePicker: UIControl, UIPickerViewDataSource, UIPickerViewDelega
         return label
     }
     
-    public func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+    public func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         let widthBuffer = 25.0
         
         let calendarComponent = self.componentAtIndex(index: component)
